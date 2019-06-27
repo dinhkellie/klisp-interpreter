@@ -14,6 +14,8 @@ Quit using (quit) or (QUIT)
 
 ## What it does
 
+In depth paper included as Senior_Project.pdf
+
 ### Updated 4/19/19
 * Loading a file
     * (load 'lisp-file.lisp) loads in a file called 'lisp-file.lisp' however the extension doesn't matter for this program, as long as the filename is prefixed with a quote symbol
@@ -62,16 +64,16 @@ Quit using (quit) or (QUIT)
 * If statements: 
     * (if (< 3 4) (+ 1 2) (/ 5 8)) = 3
     * (if (< (+ 3 4) (- 20 4)) (3) (4)) = 3
+    
+* Global variables
+   * (setq x 5)
+   * (+ 1 x) /* should print 6 */
 
 More examples are included in my testing suite in the file klisp.test.js
   
 ### Error Handling
-If one of the arguments passed to an operator is not a number, the interpreter prints out an error message, "{argument} is not a number." or "{argument} has no value" and continue the read-eval-print loop.
-
-### Known issues with program
-Does not handle double quotes
-
-Does not change the case of alphabetic symbols so 'a returns a instead of A
+Implemented as a Node module defined in the file error.js
+Custom-defined errors that print messages but do not end the program
 
 ### Not implemented
 * Parenthesis matching
