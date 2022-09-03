@@ -10,7 +10,7 @@ If node is not installed, it can be installed via [Homebrew](https://brew.sh/)
 
 Testing suite is up-to-date: run `npm run test`
 
-Quit using (quit) or (QUIT)
+Quit using `(quit)` or `(QUIT)`
 
 ## What it does
 
@@ -73,6 +73,7 @@ More examples are included in my testing suite in the file klisp.test.js
   
 ### Error Handling
 Implemented as a Node module defined in the file error.js
+
 Custom-defined errors that print messages but do not end the program
 
 ### Not implemented
